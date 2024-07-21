@@ -4,63 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahzad Ahmad Butt, Ph.D. - CV</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
+        body { font-family: 'Arial', sans-serif; margin: 20px; color: #333; }
         header, section { margin-bottom: 20px; }
         header img { height: 150px; width: 150px; border-radius: 75px; }
-        ul { list-style-type: none; }
+        ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; }
+        a { color: #0645AD; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        header h1 { animation: slideIn 2s ease-out; }
+        section { background-color: #f4f4f9; padding: 15px; border-left: 5px solid #0056b3; border-radius: 5px; }
+        .highlight { color: #0056b3; font-weight: bold; }
+
+        @keyframes slideIn {
+            from { margin-left: 100%; width: 300% }
+            to { margin-left: 0%; width: 100%; }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Shahzad Ahmad Butt, Ph.D.</h1>
         <p>Curriculum Vitae · 2024–2025 (Updated July, 2024)</p>
-        <!-- Placeholder for profile picture -->
         <img src="placeholder.jpg" alt="Shahzad Ahmad Butt">
-        <!-- LinkedIn profile link -->
-        <p><a href="https://www.linkedin.com/in/drsab/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+        <p><a href="https://www.linkedin.com/in/drsab/" target="_blank">LinkedIn Profile</a></p>
     </header>
     <section>
         <h2>Education</h2>
         <ul>
-            <li>Ph.D. in Electronics and Communications Engineering, Polytechnic University of Turin (Politecnico di Torino), Italy, 2013</li>
-            <li>Master of Science in Electronic Engineering (Highest Rank in the Class, AVG. Score: 29/30), Polytechnic University of Turin (Politecnico di Torino), Italy, 2009</li>
-            <li>Bachelor of Science in Electrical Engineering (With Honors), University of Engineering and Technology (UET) Lahore, Pakistan, 2007</li>
+            <li><span class="highlight">Ph.D. in Electronics and Communications Engineering,</span> Polytechnic University of Turin, Italy, 2013</li>
+            <li><span class="highlight">Master of Science in Electronic Engineering,</span> Polytechnic University of Turin, Italy, 2009</li>
+            <li><span class="highlight">Bachelor of Science in Electrical Engineering,</span> University of Engineering and Technology Lahore, Pakistan, 2007</li>
         </ul>
     </section>
     <section>
         <h2>Work Experience</h2>
         <ul>
-            <li><strong>Project Lead: Architectural Design and Acceleration of LLMs on FPGAs</strong>, Intel, San Jose, California, USA, 2024</li>
-            <li><strong>Project Lead: Zero-Knowledge Proof Hardware Acceleration via High-Level Design Flow/HLS on FPGAs</strong>, Intel, San Jose, California, USA, 2022-24</li>
-            <li><strong>Staff FPGA Software Development Engineer</strong>, Intel, San Jose, California, USA, 2021-22</li>
-            <li><strong>Senior Software Engineer</strong>, Xilinx (now AMD), San Jose, California, USA, 2017-2021</li>
+            <li><strong>Intel, San Jose, California, USA</strong>
+                <ul>
+                    <li><span class="highlight">Project Lead, LLM Acceleration on FPGAs (2024 - Present):</span> Led the initiative to leverage Meta's Llama-2-7B model for hardware acceleration using Intel/Altera High-Level Design Framework.</li>
+                    <li><span class="highlight">Staff FPGA Software Development Engineer (2021 - 2022):</span> Focused on designing FPGA systems to accelerate Privacy Preserving Machine Learning, open-sourced as HEXL-FPGA Library.</li>
+                </ul>
+            </li>
+            <li><strong>Xilinx (now AMD), San Jose, California, USA (2017 - 2021):</strong>
+                <ul>
+                    <li>Designed and implemented Hardware IPs for accelerating DSP and Machine Learning applications using high-level synthesis (HLS).</li>
+                </ul>
+            </li>
             <!-- More experiences can be added here -->
-        </ul>
-    </section>
-    <section>
-        <h2>Open Source Contributions</h2>
-        <ul>
-            <li><a href="https://github.com/intel/hexl-fpga" target="_blank">INTEL HEXL-FPGA Library</a></li>
-            <li><a href="https://github.com/Xilinx/Vitis_Libraries/tree/master/dsp" target="_blank">Xilinx Vitis Libraries DSP</a></li>
-            <!-- More contributions can be added here -->
         </ul>
     </section>
     <section>
         <h2>Technical and Programming Skills</h2>
         <ul>
-            <li>Programming and Hardware Modeling: OpenCL/SyCL, C/C++, OneAPI, SystemC, Verilog, Python, Bash, Tcl</li>
-            <li>Hardware Design and Simulation: Intel OneAPI, AMD/Xilinx Vitis HLS, AMD/Xilinx SDx/SDaccel, and more</li>
+            <li>OpenCL/SyCL, C/C++, OneAPI, SystemC, Verilog, Python, Bash, Tcl</li>
+            <li>Intel OneAPI, AMD/Xilinx Vitis HLS, AMD/Xilinx SDx/SDaccel</li>
             <!-- More skills can be listed here -->
         </ul>
     </section>
     <section>
         <h2>Selected Publications and Articles</h2>
         <ul>
-            <li>2024 "if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs" Published in FCCM 2024</li>
-            <!-- More publications can be added here -->
+            <li>2024 "if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs" - FCCM 2024</li>
+            <li>2018 "Design and hardware implementation of the code and carrier tracking block for an interoperable GNSS receiver" - SysCon-2018 Vancouver Canada.</li>
+            <li>2016 "Designing Hardware IPs in a Model-based Design Environment for High Level Synthesis" - Published in ACM Transactions on Embedded Computing Systems.</li>
+            <li>2014 "Design of a pseudo-log image transform IP in an HLS-based memory management framework" - Journal of Electronic Imaging.</li>
+            <li>2013 "On the Design of Digital Signal Processing IPs for High Level Hardware Synthesis in a Simulink-based Design Environment" - CDNLive 2013, Munich Germany.</li>
+            <li>2013 "Design of pseudo-log image transform IP in an HLS-based memory management framework" - IS&T/SPIE Conference on Real Time Image and Video Processing, 2013, Burlingame, California USA.</li>
+            <li>2012 "Design Space Exploration and Synthesis for Digital Signal Processing Algorithms from Simulink Models" - International Design and Test Symposium, Doha Qatar 2012.</li>
+            <li>2012 "Designing Parameterized Signal Processing IPs for High Level Synthesis in a Model Based Design Environment" - Embedded Systems Week Codes+ISSS Conference 2012, Tampere Finland.</li>
         </ul>
     </section>
 </body>
